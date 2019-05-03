@@ -22,7 +22,7 @@ public class Main
     EnhancedPlayer enhancedPlayer = new EnhancedPlayer("Romek", 100, "Sword");
     int damage = 40;
     enhancedPlayer.loseHealth(damage);
-        System.out.println(enhancedPlayer.getHealth());
+        System.out.println(enhancedPlayer.getHitpoints());
 
 
 }

@@ -3,29 +3,29 @@ package pl.mczyzewski;
 public class EnhancedPlayer
 {
     private String name;
-    private int health = 100;
+    private int hitpoints = 100;
     private String weapon;
 
-    public EnhancedPlayer(String name, int health, String weapon)
+    public EnhancedPlayer(String name, int hitpoints, String weapon)
     {
         this.name = name;
-        if(health <= 0 && health <= 100)
+        if(hitpoints <= 0 && hitpoints <= 100)
         {
-            this.health = health;
+            this.hitpoints = hitpoints;
         }
 
         this.weapon = weapon;
     }
 
-    public int getHealth()
+    public int getHitpoints()
     {
-        return health;
+        return hitpoints;
     }
 
     public void loseHealth(int damage)
     {
-        this.health = this.health - damage;
-        if (this.health <= 0)
+        this.hitpoints = this.hitpoints - damage;
+        if (this.hitpoints <= 0)
         {
             System.out.println("Player knocked out");
             //Reduce number of lives remaining for the player
