@@ -12,7 +12,13 @@ public class Player
         if(this.health <= 0)
         {
             System.out.println("Player knocked out");
+            //Reduce number of lives remaining for the player
         }
+
     }
+    public int healthRemaining(){
+        return this.health;
+    }
+
 
 }
